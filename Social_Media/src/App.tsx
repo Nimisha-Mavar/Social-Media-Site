@@ -1,7 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./componets/Home";
+import { Login } from "./componets/Login";
+import { Navbar } from "./componets/Navbar";
+
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </>
   );
 }
