@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { auth } from "../config/firebase";
 
 export const Navbar = () => {
   return (
     <>
-      <nav className="navbar" style={{ backgroundColor: "#e3f2fd" }}>
+      <nav className="navbar" style={{ backgroundColor: "#ACACE6" }}>
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
             Navbar
@@ -25,8 +26,13 @@ export const Navbar = () => {
                 Home
               </Link>
               <Link to="/login" className="nav-link">
-                Login
+                Sign In
               </Link>
+              {auth.currentUser ? (
+                <span>{auth.currentUser?.displayName}</span>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
