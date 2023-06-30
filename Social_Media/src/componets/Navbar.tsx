@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { auth } from "../config/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export const Navbar = () => {
+  const [user] = useAuthState(auth);
   return (
     <>
       <nav className="navbar" style={{ backgroundColor: "#ACACE6" }}>
@@ -25,13 +27,14 @@ export const Navbar = () => {
               <Link to="/" className="nav-link active" aria-current="page">
                 Home
               </Link>
-              <Link to="/login" className="nav-link">
-                Sign In
-              </Link>
-              {auth.currentUser ? (
-                <span>{auth.currentUser?.displayName}</span>
+              {user ? (
+                <>
+                  <Link to="/user">{user?.displayName}</Link>
+                </>
               ) : (
-                ""
+                <Link to="/login" className="nav-link">
+                  Sign In
+                </Link>
               )}
             </div>
           </div>
