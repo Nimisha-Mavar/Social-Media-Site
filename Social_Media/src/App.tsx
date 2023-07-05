@@ -3,6 +3,7 @@ import { Home } from "./componets/Home";
 import { Login } from "./componets/Login";
 import { Navbar } from "./componets/Navbar";
 import { User } from "./componets/User";
+import { CreatePost } from "./componets/CreatePost";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/user" element={<User />} />
+          <Route path="/createPost" element={<CreatePost />} />
         </Routes>
       </Router>
     </>
