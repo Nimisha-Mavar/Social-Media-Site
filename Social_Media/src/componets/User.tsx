@@ -13,12 +13,14 @@ export const User = () => {
   const [user] = useAuthState(auth);
   return (
     <>
-      <div className="card" style={{ width: "18rem" }}>
-        <div className="card-body  justify-content-center align-items-center">
-          <h5 className="card-title">{user?.displayName}</h5>
-          <button onClick={signUserOut} className="btn btn-primary">
-            Sign Out
-          </button>
+      <div className="row justify-content-center align-items-center mt-4">
+        <div className="card" style={{ width: "18rem" }}>
+          <div className="card-body  justify-content-center align-items-center">
+            <h5 className="card-title">{user?.displayName}</h5>
+            <button onClick={signUserOut} className="btn btn-primary">
+              Sign Out
+            </button>
+          </div>
         </div>
       </div>
     </>

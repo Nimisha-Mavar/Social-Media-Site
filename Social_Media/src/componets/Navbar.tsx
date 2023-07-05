@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg navbar-light"
+        className="navbar navbar-expand-md navbar-light"
         style={{ backgroundColor: "#ACACE6" }}
       >
         <div className="container-fluid justify-content-between">
@@ -20,7 +20,7 @@ export const Navbar = () => {
               <Link to="/" className="navbar-brand">
                 <img
                   src={img1}
-                  height="20"
+                  height="18"
                   alt="MDB Logo"
                   loading="lazy"
                   style={{ marginTop: "2px" }}
@@ -29,30 +29,42 @@ export const Navbar = () => {
             </a>
           </div>
           <ul className="navbar-nav flex-row">
+            <li className="nav-item me-3">
+              <Link
+                className="text-light nav-link d-sm-flex align-items-sm-center"
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
             <li className="nav-item me-3 me-lg-1">
-              <a className="nav-link" href="#">
-                <span>
-                  {user ? (
-                    <>
-                      <Link to="/createPost">
-                        <button className="btn btn-sm btn-light">
-                          Create Post
-                        </button>
-                      </Link>
-                    </>
-                  ) : (
-                    <Link to="/login" className="nav-link">
-                      Sign In
+              <span>
+                {user ? (
+                  <>
+                    <Link
+                      to="/createPost"
+                      className="text-light nav-link d-sm-flex align-items-sm-center"
+                    >
+                      <button className="btn btn-sm btn-light btn-rounded">
+                        Create Post
+                      </button>
                     </Link>
-                  )}
-                </span>
-              </a>
+                  </>
+                ) : (
+                  <Link
+                    to="/login"
+                    className="text-light nav-link d-sm-flex align-items-sm-center"
+                  >
+                    Sign In
+                  </Link>
+                )}
+              </span>
             </li>
             {user && (
               <li className="nav-item me-3 me-lg-1">
-                <a
-                  className="nav-link d-sm-flex align-items-sm-center"
-                  href="#"
+                <Link
+                  to="/user"
+                  className="nav-link d-sm-flex align-items-sm-center text-light"
                 >
                   <img
                     src={
@@ -63,10 +75,9 @@ export const Navbar = () => {
                     height="22"
                     loading="lazy"
                   />
-                  <strong className="d-none d-sm-block ms-1">
-                    <Link to="/user">{user?.displayName}</Link>
-                  </strong>
-                </a>
+                  &nbsp;
+                  {user?.displayName}
+                </Link>
               </li>
             )}
           </ul>
