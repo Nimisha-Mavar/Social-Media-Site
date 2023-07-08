@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 interface postData {
   title: string;
-  description: string;
 }
 
 export const CreatePost = () => {

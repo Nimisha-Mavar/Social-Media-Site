@@ -33,6 +33,7 @@ export const Home = () => {
             title={post.title}
             description={post.description}
             username={post.username}
+            pid={post.id}
           />
         ))}
       </div>
