@@ -10,6 +10,7 @@ import {
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Swal from "sweetalert2";
 
 interface postData {
   postId: string;
@@ -46,8 +47,8 @@ export const Like = (postId: postData) => {
             : [{ userId: user.uid, likeId: addNew.id }]
         );
       }
-    } catch (err) {
-      console.log(err);
+    } catch {
+      Swal.fire("Loged In?", "You must login to like a post");
     }
   };
 
@@ -94,9 +95,9 @@ export const Like = (postId: postData) => {
         />
         <br />
         {likes && (
-          <p style={{ fontSize: "10px" }} className="float-end">
+          <span style={{ fontSize: "10px" }} className="float-end">
             {likes.length}
-          </p>
+          </span>
         )}
       </div>
     </>
