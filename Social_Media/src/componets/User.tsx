@@ -17,7 +17,11 @@ export const User = () => {
         <div className="card" style={{ width: "18rem" }}>
           <div className="card-body  justify-content-center align-items-center">
             <h5 className="card-title">{user?.displayName}</h5>
-            <button onClick={signUserOut} className="btn btn-primary">
+            <button
+              onClick={signUserOut}
+              className="btn"
+              style={{ backgroundColor: "#ACACE6" }}
+            >
               Sign Out
             </button>
           </div>

@@ -27,8 +27,8 @@ export const Login = () => {
                 <h3 className="mb-5">Sign in</h3>
 
                 <button
-                  className="btn btn-lg btn-block btn-primary"
-                  style={{ backgroundColor: "#dd4b39" }}
+                  className="btn btn-lg btn-block"
+                  style={{ backgroundColor: "#ACACE6" }}
                   type="submit"
                   onClick={googleSignup}
                 >

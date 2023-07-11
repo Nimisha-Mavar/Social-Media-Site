@@ -72,7 +72,11 @@ export const CreatePost = () => {
                 <p style={{ color: "red" }}>{errors.description?.message}</p>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-block mb-4">
+              <button
+                type="submit"
+                className="btn btn-block mb-4 float-end"
+                style={{ backgroundColor: "#ACACE6" }}
+              >
                 Publish
               </button>
             </form>
