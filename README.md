@@ -30,19 +30,20 @@
 ## Screenshots
 
 ### Home
-<kbd>![image](https://github.com/Nimisha-Mavar/Portfolio_Maker_BackEnd/assets/112267753/fe04eb31-3a82-4b73-87cb-38fe681e9aeb)</kbd>
-
-### Services
-<kbd>![image](https://github.com/Nimisha-Mavar/Portfolio_Maker_BackEnd/assets/112267753/82f51c1f-c74d-46b2-bdc2-4603cc96d649)</kbd>
-
-### Portfolio Templates
-<kbd>![image](https://github.com/Nimisha-Mavar/Portfolio_Maker_BackEnd/assets/112267753/53de8e24-db2b-4e52-ae9f-a7fc420f3c71)</kbd>
-
-### Template Details
-<kbd>![image](https://github.com/Nimisha-Mavar/Portfolio_Maker_BackEnd/assets/112267753/b21fe743-19f5-4180-9016-2f4f9b910894)</kbd>
-
-### Registration
-<kbd>![image](https://github.com/Nimisha-Mavar/Portfolio_Maker_BackEnd/assets/112267753/a5d17a49-d2b7-4cc9-aa42-4fe0326599ac)</kbd>
+<kbd>![image](https://github.com/Nimisha-Mavar/Social-Media-Site/assets/112267753/1f8b99b3-81ae-4e15-bdf0-a034c72ce4e5)
+</kbd>
 
 ### Login
-<kbd>![image](https://github.com/Nimisha-Mavar/Portfolio_Maker_BackEnd/assets/112267753/565bbebb-e6b2-42b4-a30b-3684477ad346)</kbd>
+<kbd>![image](https://github.com/Nimisha-Mavar/Social-Media-Site/assets/112267753/62ec0759-c7fd-4bbc-9b49-63960551e471)
+</kbd>
+
+### Create Post
+<kbd>![image](https://github.com/Nimisha-Mavar/Social-Media-Site/assets/112267753/826f91b7-d25c-4c29-8d22-6e6745670b2c)
+</kbd>
+
+### Like and Unlike Posts
+<kbd>![image](https://github.com/Nimisha-Mavar/Social-Media-Site/assets/112267753/9ebdaa52-30d7-4524-9f56-0c188920c091)
+</kbd>
+
+### Sign Out
+<kbd>![image](https://github.com/Nimisha-Mavar/Social-Media-Site/assets/112267753/c5aeddd6-ed09-4964-bc46-0917deaf852d)</kbd>
