@@ -1,5 +1,5 @@
 # Postify 
-   A Postify is a site that provide basic functionality like Login, Logout, Create Post, Like and Unlike post. I created Postiy as a part of react learning.
+   A Postify is a site that provide basic functionality like Login, Logout, Create Post, Like and Unlike post.<br/> I created Postify as a part of react learning.
 
 ## Tech Stack
 
@@ -16,6 +16,8 @@
 - Create Post.
 - like and unlike Posts.
 
+## Live Demo
+https://social-media-site-846b2.web.app/
 
 ## Lessons Learned
 
