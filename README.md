@@ -7,7 +7,7 @@
 
 **Server:** Firebase
 
-**Database:** Firestore
+**Database:** Firestore(NoSql)
 
 **Deployment:** Firebase
 
