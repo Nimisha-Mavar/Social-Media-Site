@@ -1,6 +1,9 @@
 # Postify 
    A Postify is a site that provide basic functionality like Login, Logout, Create Post, Like and Unlike post.<br/> I created Postify as a part of react learning.
 
+# View 
+https://github.com/Nimisha-Mavar/Leaf-Diseases-Detection/assets/112267753/0b10eeac-6b2d-46da-9a6b-07fd7e99aa11
+
 ## Tech Stack
 
 **Client:** React Js, Bootstrap
